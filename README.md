@@ -20,7 +20,7 @@
 
 ---
 
-### 04. 의존성 주입
+### 04. 의존성 주입 패턴
 
 `Views > Shared > menu` navi-item 수정 가능
 
@@ -44,5 +44,26 @@
 `의존성 주입`도 클래스 인스턴스를 직접 받지 않고 생성자의 파라미터를 통해 주입받아 사용한다.
 
 닷넷코어의 키워드는 `분리`이다.
+
+---
+<br/><br/>
+
+### 2. Entity Framework Core
+---
+### 05. Entity Framework Core 소개
+
+① Code-First
+
+코드작성 우선주의
+
+Migrations : 미리 작성된 코드로 데이터베이스에 테이블과 컬럼 작성
+<br/><br/>
+
+② Database-First
+
+데이터베이스 작업 우선주의
+
+Entity Data Modeling: 코드를 쉽게 작성할 수 있도록 도와줌.
+
 
 ---
