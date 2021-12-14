@@ -57,6 +57,11 @@
 코드작성 우선주의
 
 Migrations : 미리 작성된 코드로 데이터베이스에 테이블과 컬럼 작성
+
+장점: 1. Table과 Column을 Application에서 관리 2. Migrations를 통한 이력 관리
+
+단점: 2. 사소한 작업을 Migrations하는 것이 번거로움 2. 운영서버에 바로 적용이 어려움
+
 <br/><br/>
 
 ② Database-First
