@@ -34,9 +34,15 @@ namespace NetCore.Web
 
 
             //DB접속정보, Migrations 프로젝트 지정
-            services.AddDbContext<CodeFirstDbContext>(options =>
-            options.UseSqlServer(connectionString: Configuration.GetConnectionString(name:"DefaultConnection"),
-            sqlServerOptionsAction:mig => mig.MigrationsAssembly(assemblyName:"NetCore.Services")));
+            //code-First
+            //services.AddDbContext<CodeFirstDbContext>(options =>
+            //options.UseSqlServer(connectionString: Configuration.GetConnectionString(name:"DefaultConnection"),
+            //sqlServerOptionsAction:mig => mig.MigrationsAssembly(assemblyName:"NetCore.Services")));
+            
+            //Database-First : DB 접속 정보만
+            services.AddDbContext<DBFirstDbContext>(options =>
+            options.UseSqlServer(connectionString: Configuration.GetConnectionString(name: "DBFirstDBConnection")));
+
 
             //MVC 패턴을 사용하기 위해 서비스로 등록
             services.AddControllersWithViews();
