@@ -72,4 +72,10 @@ Entity Data Modeling: 코드를 쉽게 작성할 수 있도록 도와줌.
 
 단점: 2. 사소한 작업을 Migrations하는 것이 번거로움 2. 운영서버에 바로 적용이 어려움
 
+### 08. Database-First 방식
+
+장점: 1. Database작업은 기존과 동일하게 수행 가능 2. Entity Data Modelling으로 손 코딩 거의 없음
+
+단점: 2. Database 작업의 이력관리를 하지 못함 2. Table 또는 Column 변경 시 C#코드도 수동 변경
+
 ---
